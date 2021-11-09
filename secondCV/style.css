@@ -1,0 +1,326 @@
+/* google font links */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&family=Noto+Sans&family=Open+Sans:wght@400;500;700&family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@400;500;700&display=swap');
+
+
+
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none; 
+    outline: none;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62%;
+}
+
+.section {
+    padding: 1.5rem 0 3rem 0;
+    border-bottom: 1px solid #000;
+}
+
+.section-title {
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.sub-title {
+    font-size: 1.6rem;
+    color: #222;
+    font-weight: 500;
+}
+
+.section-details {
+    font-size: 1.4rem;
+    color: #333;
+    line-height: 2.5rem;
+}
+
+.section-details a {
+    color: #333;
+}
+
+.section-details-content {
+    margin-bottom: .5rem;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #333;
+}
+
+.resume-container {
+    max-width: 968px;
+    width: calc(100% - 3rem);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 3rem 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,.1);
+}
+
+/* resume left side  */
+
+.resume-left {
+    background: #e2d7d7;
+    border-radius: 10px 0 0 10px;
+    padding: 3rem 1.5rem;
+}
+
+.home-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #000;
+}
+
+.home-img {
+    height: 130px;
+    width: 130px;
+    object-fit: cover;
+    align-self: center;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.name {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.name > span {
+    font-weight: 600;
+}
+
+.profession-title {
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.address {
+    margin-top: 3rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #000;
+
+}
+
+.address-content {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.address-content i {
+    font-size: 1.7rem;
+    color: #333;
+}
+
+.address-content p {
+    font-size: 1.5rem;
+}
+
+.skills {
+    border-bottom: none;
+}
+
+.skills .skills-data {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.skills-data .skills-data-text {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.skills .skills-data .skills-data-show {
+    width: 60%;
+    position: relative;
+}
+
+.skills-data-show p {
+    position: relative;
+    text-align: right;
+    font-size: 1.2rem;
+    color: #222;
+}
+
+.skills-data-show .bar {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 4px;
+    background: #eee;
+    border: 1px solid #333;
+    border-radius: 15px;
+}
+
+.skills-data-show .bar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #1f1fa5;
+    box-shadow: 0 0 5px 5px rgba(255,255,255,.9);
+    border-radius: 15px;
+    z-index: 1;
+}
+
+.skills-data-show .bar.html::before {
+    animation: html 3s forwards;
+}
+
+@keyframes html {
+    0% {
+        width: 0%;
+    } 100% {
+        width: 80%;
+    }
+}
+
+.skills-data-show .bar.css::before {
+    animation: css 3s forwards;
+}
+
+@keyframes css {
+    0% {
+        width: 0%;
+    } 100% {
+        width: 75%;
+    }
+}
+
+.skills-data-show .bar.js::before {
+    animation: js 3s forwards;
+}
+
+@keyframes js {
+    0% {
+        width: 0%;
+    } 100% {
+        width: 70%;
+    }
+}
+
+.skills-data-show .bar.php::before {
+    animation: php 3s forwards;
+}
+
+@keyframes php {
+    0% {
+        width: 0%;
+    } 100% {
+        width: 90%;
+    }
+}
+
+/* resume-right start here  */
+
+.resume-right {
+    padding: 3rem 2rem;
+    background: #fff;
+    border-radius: 0 10px 10px 0;
+}
+
+.identity {
+    padding-bottom: 1rem;
+}
+
+.identity h3 {
+    font-size: 2.2rem;
+    font-weight: 500;
+    line-height: 3rem;
+    letter-spacing: 3px;
+}
+
+.identity p {
+    font-size: 1.5rem;
+}
+
+.item-content {
+    display: grid;
+    grid-template-columns: .75fr 2fr;
+    gap: 3rem;
+    padding-bottom: 1.5rem;
+    font-size: 1.4rem;
+}
+
+.item-content:last-child {
+    padding-bottom: 0;
+}
+
+.item-content .year {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.item-content .year::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #333;
+    border-radius: 50%;
+}
+
+.item-content .year::after {
+    content: '';
+    position: absolute;
+    right: 7px;
+    top: 21px;
+    width: 2px;
+    height: 100%;
+    background: #1f1fa5;
+}
+
+.item-content:last-child .year::after {
+    display: none;
+}
+
+.interests {
+    border-bottom: none;
+}
+
+.interests .interest-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.interest-details .interest-details-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.interest-details-content i {
+    font-size: 2.5rem;
+    color: #1f1fa5;
+}
+
+.interest-details-content p {
+    font-size: 1.5rem;
+    color: #333;
+}
+
