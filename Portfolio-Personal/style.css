@@ -1112,8 +1112,12 @@ footer {
 }
 
 @media (max-width: 350px) {
+    .btn {
+        margin-bottom: 10px;
+    }
+
     .social-links {
         bottom: 10px;
-        margin-top: 10px;
+        margin-top: 5px;
     }
 }
