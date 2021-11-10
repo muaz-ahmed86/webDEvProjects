@@ -245,7 +245,7 @@ header {
 
 @keyframes slide {
     100% {
-        top: -10rem;
+        top: -20rem;
     }
 }
 
@@ -1037,6 +1037,12 @@ footer {
         height: 2.5rem;
         line-height: 2.5rem;
         margin-left: 1rem;
+    }
+
+    @keyframes slide {
+        100% {
+            top: -20rem;
+        }
     }
 
     .btn {
