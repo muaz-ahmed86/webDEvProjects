@@ -1068,9 +1068,9 @@ footer {
         margin-bottom: 0;
     }
 
-    .about-content {
-        /* justify-content: flex-start; */
-    }
+    /* .about-content {
+        justify-content: flex-start;
+    } */
 
     .about-content .about-img {
         width: 250px;
