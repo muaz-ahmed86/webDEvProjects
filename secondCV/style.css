@@ -346,6 +346,7 @@ body {
     }
 
     .resume-container {
+        width: 100%;
         /* grid-template-columns: 1fr; */
         margin: 0;
     }
