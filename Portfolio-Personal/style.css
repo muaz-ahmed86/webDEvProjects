@@ -245,7 +245,7 @@ header {
 
 @keyframes slide {
     100% {
-        top: -20rem;
+        top: -10rem;
     }
 }
 
@@ -923,6 +923,10 @@ footer {
 /* media qurey starts here  */
 
 @media (max-width: 991px) {
+    html {
+        font-size: 56%;
+    }
+
     header {
         padding: 0 20px;
     }
@@ -1002,22 +1006,104 @@ footer {
 }
 
 @media (max-width: 448px) {
+    html {
+        font-size: 45%;
+    }
+
+    section {
+        padding: 3rem 1.5rem;
+    }
+
+    header {
+        padding: 3rem 1.5rem;
+    }
+
+    .navbar {
+        left: 1.5rem;
+        right: 1.5rem;
+    }
+
+    .manu-bar {
+        height: 12px;
+        width: 17px;
+    }
+
+    .text-wrapper {
+        text-align: center;
+        font-size: 1.6rem;
+    }
+
+    .dynamic-text {
+        height: 2.5rem;
+        line-height: 2.5rem;
+        margin-left: 1rem;
+    }
+
+    .btn {
+        margin: 0 auto;
+    }
+
+    .social-links {
+        bottom: 20px;
+    }
+
     .my-image {
+        /* margin-right: 0; */
         border: none;
         box-shadow: none;
+        text-align: center;
     }
 
     .my-image::before {
-        border: none;
-        box-shadow: none;
+        display: none;
+        /* border: none;
+        box-shadow: none; */
     }
 
     .my-image img {
-        width: 360px;
+        width: 250px;
     }
 
     .header-context {
         margin-bottom: 0;
+    }
+
+    .about-content {
+        /* justify-content: flex-start; */
+    }
+
+    .about-content .about-img {
+        width: 250px;
+        height: 300px;
+        justify-self: end;
+    }
+
+    .skills-content .left {
+        width: auto;
+    }
+
+    .service-container .serviceBox {
+        width: auto;
+        height: 250px;
+    }
+
+    .click-content .click-image {
+        width: auto;
+        /* height: 230px; */
+    }
+
+    .footer-container {
+        justify-content: space-between;
+        gap: 3rem;
+    }
+
+    .short-intro {
+        width: 40%;
+    }
+
+    .short-skills {
+        margin-right: 0;
+        padding: 0;
     }
 
     .row50 {

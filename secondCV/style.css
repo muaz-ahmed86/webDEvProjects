@@ -324,3 +324,39 @@ body {
     color: #333;
 }
 
+@media (max-width: 450px) {
+
+    html {
+        font-size: 52%;
+    }
+
+    .resume-container {
+        grid-template-columns: 1fr;
+        margin: 0;
+    }
+
+    .resume-left {
+        border-radius: 0;
+    }
+
+    .resume-right {
+        border-radius: 0;
+    }
+
+    .item-content {
+        gap: 2rem;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .item-content .year::before {
+        top: 3px;
+        height: 10px;
+        width: 10px;
+    }
+
+    .item-content .year::after {
+        top: 16px;
+        right: 5px;
+    }
+}
+
