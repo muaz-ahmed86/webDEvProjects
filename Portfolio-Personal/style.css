@@ -1110,3 +1110,10 @@ footer {
         flex-direction: column;
     }
 }
+
+@media (max-width: 350px) {
+    .social-links {
+        bottom: 10px;
+        margin-top: 10px;
+    }
+}
