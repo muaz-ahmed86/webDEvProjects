@@ -324,10 +324,9 @@ body {
     color: #333;
 }
 
-@media (max-width: 450px) {
-
+@media (max-width: 768px) {
     html {
-        font-size: 52%;
+        font-size: 60%;
     }
 
     .resume-container {
@@ -335,11 +334,23 @@ body {
         margin: 0;
     }
 
-    .resume-left {
+    .resume-left, .resume-right {
         border-radius: 0;
     }
+}
 
-    .resume-right {
+@media (max-width: 450px) {
+
+    html {
+        font-size: 52%;
+    }
+
+    .resume-container {
+        /* grid-template-columns: 1fr; */
+        margin: 0;
+    }
+
+    .resume-left, .resume-right {
         border-radius: 0;
     }
 
